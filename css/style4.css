@@ -1,0 +1,819 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+@font-face {
+	font-family: Calistoga;
+	src: url("../fonts/Alkes-Bold.ttf") format("opentype");
+}
+@font-face {
+	font-family: Marvin;
+	src: url("../fonts/Marvin.otf") format("opentype");
+}
+/*--------------------*/
+.main {
+	height: 100vh;
+	width: 100%;
+	background: url('/img/profile/bg.jpg') no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.header {
+	width: 100%;
+	height: 12%;
+	max-height: 140px;
+	min-height: 80px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.panel {
+	width: 100%;
+	height: 60%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: url('/img/islands/header.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.panel_nick {
+	position: relative;
+	left: 50px;
+	font-family: Calistoga;
+	color: #fff;
+	font-size: 200%;
+}
+.panel_exit {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin-right: 50px;	
+	height: 80%;
+	min-width: 110px;
+	min-height: 28px;
+	font-family: Calistoga;
+	color: #fff;
+	font-size: 150%;
+	cursor: pointer;
+	background: url('/img/islands/button_exit.png') no-repeat;
+	background-size: 100% 100%;
+}
+.panel_exit:hover {
+	transform: scale(1.03, 1.03);
+}
+.silver {
+	height: 20%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+.silver-img {
+	height: 100%;
+	min-width: 20px;
+	background: url('/img/islands/coin_silver.png') no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.silver-text {
+	margin-left: 6px;
+	font-family: Calistoga;
+	color: #fff;
+	font-size: 180%;
+}
+.gold {
+	height: 20%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+.gold-img {
+	height: 100%;
+	min-width: 20px;
+	background: url('/img/islands/coin_gold.png') no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.gold-text {
+	margin-left: 6px;
+	font-family: Calistoga;
+	color: #fff;
+	font-size: 180%;
+}
+.help_main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 80%;
+	width: 60%;
+}
+.help_buttons {
+	width: 100%;
+	height: 6%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.help_button {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3%;
+	height: 100%;
+	min-width: 110px;
+	min-height: 28px;
+	background: url('/img/battle/button.png') no-repeat;
+	background-size: 100% 100%;
+	font-family: Marvin;
+	color: #fff;
+	font-size: 190%;
+	cursor: pointer;
+}
+.help_button:hover {
+	transform: scale(1.03, 1.03);
+}
+.help_button2 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0 6%;
+	height: 100%;
+	min-width: 110px;
+	min-height: 28px;
+	background: url('/img/battle/button3.png') no-repeat;
+	background-size: 100% 100%;
+	font-family: Marvin;
+	color: #fff;
+	font-size: 190%;
+	cursor: default;
+	margin-left: 50%;
+	transform:translateX(-50%);
+}
+.help_button3 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3%;
+	height: 100%;
+	min-width: 110px;
+	min-height: 28px;
+	background: url('/img/battle/button3.png') no-repeat;
+	background-size: 100% 100%;
+	font-family: Marvin;
+	color: #fff;
+	font-size: 190%;
+	cursor: default;
+	margin-left: 50%;
+	transform:translateX(-50%);
+}
+.help_block {
+	height: 94%;
+	width: 100%;
+	background: url('/img/islands/board.jpg') no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.faq_block {
+	width: 90%;
+	height: 80%;
+	overflow: auto;
+}
+.faq_block::-webkit-scrollbar {
+	background-color: #7a5441;
+	border: 0;
+	border-radius: 0;
+	width: 0;
+}
+.faq_block::-webkit-scrollbar-thumb {
+	border-radius: 0;
+	background-color: #ffd291;
+}
+.accordion {
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 10px 15px;
+	font-family: Marvin;
+	color: #fdbc3b;
+	font-size: 200%;
+	cursor: pointer;
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
+}
+.content {
+	transition: 0.3s ease-in-out;
+	max-height: 0;
+	overflow: hidden;
+	font-family: Calistoga;
+	font-size: 160%;
+	text-indent: 2%;
+	color: #4d0c07;
+
+}
+.block1 {
+	width: 100%;
+	height: 78%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+.buttons_change {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.h1_button {
+	font-size: 260%;
+	font-family: Calistoga;
+	color: #fff;
+	background: none;
+	cursor: pointer;
+	margin: 0 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.blur {
+	opacity: 40%;
+}
+.withdraw_block {
+	margin: 1% 0;
+}
+.swap_block {
+	margin: 1% 0;
+}
+.dialog {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	max-width: 500px;
+	max-height: 250px;
+	min-width: 350px;
+	background: url('/img/garden/board.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+.dialog_h2 {
+	width: 100%;
+	height: 30%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 36px;
+	font-family: Calistoga;
+	color: #fff;
+}
+.dialog_h3 {
+	width: 100%;
+	height: 30%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 36px;
+	font-family: Calistoga;
+	color: #362e1f;
+}
+.dialog_form {
+	width: 70%;
+	height: 30%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+}
+.dialog_yes {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3%;
+    height: 60%;
+    width: 20%;
+    min-width: 110px;
+    min-height: 28px;
+    background: url(/img/battle/button.png) no-repeat;
+    background-size: 100% 100%;
+    font-family: Marvin;
+    color: #fff;
+    font-size: 190%;
+    cursor: pointer;
+}
+.dialog_yes:hover {
+	transform: scale(1.03, 1.03);
+}
+.dialog_no {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3%;
+    height: 60%;
+    width: 20%;
+    min-width: 110px;
+    min-height: 28px;
+    background: url(/img/battle/button3.png) no-repeat;
+    background-size: 100% 100%;
+    font-family: Marvin;
+    color: #fff;
+    font-size: 190%;
+    cursor: pointer;
+}
+.dialog_no:hover {
+	transform: scale(1.03, 1.03);
+}
+.msg {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 28px;
+	font-family: Calistoga;
+	color: #A60400;
+}
+.h1_block {
+	font-size: 250%;
+	font-family: Calistoga;
+	color: #362e1f;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0;
+}
+.h2_block {
+	font-size: 3vh;
+	font-family: Calistoga;
+	color: #362e1f;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0;
+}
+.h2_block>img {
+	margin: 0 5px;
+	min-width: 30px;
+	min-height: 30px;
+	width: 4%;
+	height: 5%;
+}
+.method {
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px;
+}
+.method > img {
+	width: 100%;
+	height: 100%;
+	padding: 3%;
+}
+.method > input {
+	visibility: hidden;
+	position: absolute;
+}
+.method > input + img {
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+.method > input:checked + img {
+	border: 2px solid black;
+	border-radius: 10%;
+}
+.swap_form {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.swap_form>label>img {
+	height: 3vh;
+}
+.swap_text {
+	width: 5%;
+    min-width: 120px;
+    height: 5%;
+    margin: 0 10px;
+	background-color: #5c4023;
+	border: 2px solid #c6ae99;
+	padding: 3px 8px;
+    color: #fff;
+    font-family: Calistoga;
+    font-size: 90%;
+}
+.swap_input {
+    min-width: 100px;
+    min-height: 35px;
+    font-family: Marvin;
+    color: #fff;
+    font-size: 80%;
+    background: url(/img/battle/button4.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.withdraw_input {
+	min-width: 160px;
+    min-height: 35px;
+    font-family: Marvin;
+    color: #fff;
+    font-size: 80%;
+    background: url(/img/battle/button4.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.table_profile {
+	overflow: auto;
+	height: 78%;
+	width: 90%;
+	border: 3px solid #70523e;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.table_profile::-webkit-scrollbar {
+	background-color: #7a5441;
+	border: 1px solid #362e1f;
+	border-radius: 6px;
+	width: 12px;
+}
+.table_profile::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #ffd291;
+}
+.tr_profile {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-family: Calistoga;
+	color: #362e1f;
+	font-size: 140%;
+}
+.tr_profile:last-child {
+	border-bottom: 3px solid #70523e;
+}
+.td_profile {
+	width: 33.333%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	padding: 0.5% 0;
+}
+.swap_none {
+	text-align: center;
+	font-family: Calistoga;
+	color: #fff;
+	font-size: 200%;
+	margin: 1% 0 2% 0;
+}
+.none {
+	display: none;
+}
+@media(max-height: 950px) {
+	.ticket_form {
+		margin-top: 10%;
+	}
+	.help_button3 {
+		font-size: 140%;
+		padding: 0 3%;
+	}
+	.box_messages {
+		margin-top: 9%;
+	}
+	.ticket_send_submit {
+		font-size: 160%;
+	}
+	.ticket_close_submit {
+		font-size: 150%;
+	}
+}
+@media(max-width: 950px) {
+	.help_main {
+		width: 80%;
+	}
+	.table_help {
+		margin-top: 15%;
+	}
+	.ticket_form {
+		margin-top: 15%;
+	}
+	.help_button3 {
+		font-size: 160%;
+		padding: 0 3%;
+	}
+	.box_messages {
+		margin-top: 15%;
+	}
+	.ticket_send_submit {
+		font-size: 160%;
+	}
+	.ticket_close_submit {
+		font-size: 150%;
+	}
+}
+@media(max-width: 600px) {
+	.panel_exit {
+		margin-right: 10px;
+	}
+	.panel_nick {
+		left: 30px;
+	}
+	.help_main {
+		height: 79%;
+		width: 95%;
+		margin-top: 5%;
+	}
+	.help_buttons {
+		height: 5%;
+	}
+	.help_button {
+		font-size: 110%;
+	}
+	.help_button2 {
+		font-size: 110%;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+	.help_button3 {
+		font-size: 110%;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+	.table_help {
+		margin-top: 15%;
+	}
+	.ticket_input {
+		font-size: 160%;
+	}
+	.ticket_big_input {
+		font-size: 160%;
+		padding: 10px;
+		height: 50%;
+	}
+	.msg {
+		font-size: 24px;
+	}
+	.ticket_button_message {
+		margin-top: 1%;
+	}
+	.ticket_send_submit {
+		margin-left: 5%;
+		transform: translateX(0);
+	}
+	.withdraw_input {
+		min-width: 110px;
+		font-size: 65%;
+	}
+}
+@media(max-height: 450px) {
+	.tr_profile {
+		font-size: 120%;
+	}
+	.help_main {
+		height: 79%;
+		width: 60%;
+	}
+	.help_buttons {
+		height: 9%;
+	}
+	.help_button {
+		font-size: 120%;
+	}
+	.help_button2 {
+		font-size: 120%;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+	.help_button3 {
+		font-size: 120%;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+	.table_help {
+		margin-top: 5%;
+	}
+	.ticket_form {
+		margin-top: 5%;
+	}
+	.ticket_input {
+		font-size: 120%;
+	}
+	.ticket_big_input {
+		font-size: 120%;
+		padding: 5px;
+		height: 30%;
+	}
+	.ticket_submit {
+		font-size: 120%;
+		min-width: 120px;
+		min-height: 30px
+	}
+	.msg {
+		margin-top: 5px;
+		font-size: 20px;
+	}
+	.box_messages {
+		margin-top: 6%;
+		height: 40%;
+	}
+	.ticket_send_submit {
+		font-size: 110%;
+		min-width: 80px;
+		margin-left: 5%;
+		transform: translateX(0);
+	}
+	.ticket_close_submit {
+		font-size: 100%;
+	}
+	.msg_t {
+		margin-left: 5px;
+		margin-top: 5px;
+		font-size: 18px;
+	}
+	.msg_text {
+		margin-left: 0;
+		font-size: 16px;
+	}
+	.ticket_text {
+		font-size: 120%;
+	}
+	.ticket_send_message_input {
+		padding: 3px 5px;
+		font-size: 120%;
+	}
+}
