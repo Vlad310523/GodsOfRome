@@ -14,7 +14,6 @@ Before you begin, make sure your system has the following:
 
 ### 2. Clone the Repository
 
-```bash
 git clone https://github.com/yourusername/GodsOfRome.git
 cd GodsOfRome
 
